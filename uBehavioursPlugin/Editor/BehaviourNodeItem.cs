@@ -26,10 +26,6 @@ public class BehaviourNodeItem : IDiagramNodeItem
         return false;
     }
 
-    public IEnumerable<IDiagramLink> GetLinks(IDiagramNode[] nodes)
-    {
-        yield break;
-    }
 
     public bool IsSelected
     {
@@ -67,7 +63,7 @@ public class BehaviourNodeItem : IDiagramNodeItem
        
     }
 
-    public void Deserialize(Invert.uFrame.Editor.JSONClass cls)
+    public void Deserialize(Invert.uFrame.Editor.JSONClass cls, INodeRepository repository)
     {
         
     }
